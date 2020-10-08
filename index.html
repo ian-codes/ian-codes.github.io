@@ -1,7 +1,39 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ian-codes</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="styelesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
 	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
+		<div class="menubar" id="myMenubar">
+			<a class="active" href="#home">Home</a>
+			<a href="#contat">Contact</a>
+			<a href="#about">About</a>
+			<a href="#music">Music</a>
+			<a href="#programming">Programming</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		
+		<div>
+			<h1>Hello World</h1>
+			<p>I'm hosted with GitHub Pages.</p>
+		</div>
+		
+	
+	<script>
+	function myFunction() {
+		var x = document.getElementById("myMenubar");
+		if (x.className === "menubar") {
+			x.className += " responsive";
+		} else {
+			x.className = "menubar";
+		}
+	}
+	</script>
 	</body>
 </html>
